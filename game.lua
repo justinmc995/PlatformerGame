@@ -4,12 +4,6 @@
 --
 -----------------------------------------------------------------------------------------
 
---[[ TODO:
-	Add more level pieces
-	Add running and jumping animations for the player
-	Fix jumping bugs?
-]]
-
 -- Shortcut variables
 local Cx = display.contentCenterX
 local Cy = display.contentCenterY
@@ -1678,7 +1672,7 @@ local function gameLoop()
 		updateText(-1)
 	end
 	
-	-- If player is touching the ground give them a life
+	-- If player is touching the ground give them back their jump
 	if (playerInContact == true) then
 		playerHasJump = true
 	end
